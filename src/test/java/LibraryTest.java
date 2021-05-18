@@ -27,8 +27,9 @@ public class LibraryTest {
         assertEquals(0, library.BookStock());
     }
 
-//    @Test
-//        public void countBookStock() {
-//            assertEquals(0, library.getBookStock());
-//    }
+    @Test
+    public void canAddBookToStock() {
+        library.addBookToStock(book);
+        assertEquals(1, library.BookStock());
+    }
 }
