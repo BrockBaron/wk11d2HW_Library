@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Library {
     private ArrayList<Book> bookStock;
@@ -20,4 +21,9 @@ public class Library {
             bookStock.add(book);
         }
     }
+
+    HashMap<String, String> bookCountByGenre = new HashMap<String, String>();
+
+
+
 }
