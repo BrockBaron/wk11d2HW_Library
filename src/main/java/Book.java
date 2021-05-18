@@ -13,4 +13,8 @@ public class Book {
     public String getBookTitle() {
         return this.title;
     }
+
+    public String getBookAuthor() {
+        return this.author;
+    }
 }
