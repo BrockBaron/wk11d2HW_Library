@@ -13,7 +13,7 @@ public class LibraryTest {
 
     @Before
     public void before(){
-        library = new Library(6);
+        library = new Library(4);
         book = new Book("Jurassic Park", "Michael Crichton", "Sci-fi");
         book1 = new Book("Martian Chronicles", "Ray Bradbury", "Sci-fi");
         book2 = new Book("Black Box Thinking", "Matthew Syed", "Self-help");
@@ -24,12 +24,16 @@ public class LibraryTest {
 
     @Test
     public void booksCountStartsAt0() {
-        assertEquals(0, library.BookStock());
+        assertEquals(0, library.getBookStock());
     }
 
     @Test
     public void canAddBookToStock() {
         library.addBookToStock(book);
-        assertEquals(1, library.BookStock());
+        library.addBookToStock(book1);
+        library.addBookToStock(book2);
+        library.addBookToStock(book3);
+        library.addBookToStock(book4);
+        assertEquals(4, library.getBookStock());
     }
 }

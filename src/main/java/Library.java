@@ -10,9 +10,14 @@ public class Library {
     }
 
 
-    public int BookStock() {
+    public int getBookStock() {
         return this.bookStock.size();
     }
 
 
+    public void addBookToStock(Book book) {
+        if(getBookStock() < this.capacity){
+            bookStock.add(book);
+        }
+    }
 }
