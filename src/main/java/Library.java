@@ -6,7 +6,7 @@ public class Library {
 
     public Library(int capacity){
         this.bookStock = new ArrayList<>();
-        this.capacity = 8;
+        this.capacity = capacity;
     }
 
 
