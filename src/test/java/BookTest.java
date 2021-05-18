@@ -13,7 +13,12 @@ public class BookTest {
 
     @Test
     public void bookHasTitle() {
-        assertEquals("Jurassic Park", book.getTitle());
+        assertEquals("Jurassic Park", book.getBookTitle());
+    }
+
+    @Test
+    public void bookHasAuthor() {
+        assertEquals("Michael Crichton", book.getBookAuthor());
     }
 
 }

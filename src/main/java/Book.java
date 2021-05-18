@@ -10,7 +10,7 @@ public class Book {
         this.genre = genre;
     }
 
-    public String getTitle() {
+    public String getBookTitle() {
         return this.title;
     }
 }
