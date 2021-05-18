@@ -10,6 +10,11 @@ public class Library {
     }
 
 
+    public ArrayList<Book> getBookCount(){
+        return bookStock;
+    }
 
-
+    public int BookStock() {
+        return this.bookStock.size();
+    }
 }

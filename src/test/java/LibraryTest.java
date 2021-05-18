@@ -23,7 +23,12 @@ public class LibraryTest {
     }
 
     @Test
-    public void countBookStock() {
-        assertEquals(5, library.getBookStock());
+    public void booksCountStartsAt0() {
+        assertEquals(0, library.BookStock());
     }
+
+//    @Test
+//        public void countBookStock() {
+//            assertEquals(0, library.getBookStock());
+//    }
 }
